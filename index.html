@@ -17,7 +17,7 @@
     </details>
     <br /><br />
     <main>
-      <form action="" method="post">
+      <form action="https://formspree.io/f/mwkzdwyg" method="post">
         <details>
           <summary>
             click here to <mark> register </mark> our newsletter
@@ -39,7 +39,7 @@
               placeholder="enter last name"
               required
             /><br /><br />
-            <input type="email" placeholder="enter email address" /><br /><br />
+            <!--<input type="email" placeholder="enter email address" /><br /><br />-->
             <label for="birthDay">please enter your birthday: </label>
             <input type="date" name="birthday" id="birthDay" />
             <br /><br />
@@ -53,26 +53,22 @@
             <input type="checkbox" name="funBox" id="funBox" />
             <br /><br />
             <input type="hidden" />
-            <input type="submit" value="submit it!" /><br /><br /><br />
+            <button>submit</button><br /><br /><br />
             <input type="reset" value="reset all" />
           </fieldset>
         </details>
       </form>
     </main>
-    <br /><br /><br />
+    <br />
     <h3>create your own southpark AAAAAND ITS GONE MEME!</h3>
-    <form action="https://apimeme.com/meme?meme=" method="post">
-      <label for="firstLine">Enter first line:</label>
-      <input type="text" name="top" id="top" />
-      <label for="lastLine">Enter last line:</label>
+    <form action="https://apimeme.com/meme?" method="get">
+      <label for="top">add top line: </label>
+      <input type="text" name="top" id="top" /><br />
+      <label for="bottom">add bottom line:</label>
       <input type="text" name="bottom" id="bottom" />
-      <input
-        type="hidden"
-        name="hidden"
-        id="heddinInp"
-        value="Aaaaand-its-gone"
-      />
-      <input type="submit" />
+      <input type="hidden" name="meme" value="Aaaaand-Its-Gone" />
+      <br />
+      <button>submit</button>
     </form>
   </body>
 </html>
